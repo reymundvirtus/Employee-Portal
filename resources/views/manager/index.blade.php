@@ -89,12 +89,6 @@
                                 href="javascript:void(0)" aria-expanded="false"><i
                                     class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard </span></a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark active"
-                            href="javascript:void(0)" aria-expanded="false" id="navbarDropdown" role="button" data-bs-toggle="modal" data-bs-target="#addAccountModal" aria-expanded="false">
-                                <i class="mdi mdi-account"></i><span class="hide-menu">Create User</span>
-                            </a>
-                        </li>
                         <li class="nav-item dropdown mr-7">
                             <form action="{{ route('logout') }}" method="POST" class="p-3 inline">
                                 @csrf
@@ -324,6 +318,7 @@
                             <input style="background-color: #b6a4f5" type="text" class="form-control text-black" id="passwordu" placeholder="Password" required>
                             <label style="color: rgb(0, 0, 0)" for="floatingInput">Password</label>
                         </div>
+                        <p class="text-red-500 font-bold">Note: Put your current or new password before clicking Done</p>
                         <button type="submit" class="btn card-hover" data-bs-dismiss="modal" style="background-color: #c94bbd; color: rgb(0, 0, 0)">Done</button>
                     </form>
                 </div>

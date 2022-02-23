@@ -324,6 +324,7 @@
                             <input style="background-color: #b6a4f5" type="text" class="form-control text-black" id="passwordu" placeholder="Password" required>
                             <label style="color: rgb(0, 0, 0)" for="floatingInput">Password</label>
                         </div>
+                        <p class="text-red-500 font-bold">Note: Put your current or new password before clicking Done</p>
                         <button type="submit" class="btn card-hover" data-bs-dismiss="modal" style="background-color: #c94bbd; color: rgb(0, 0, 0)">Done</button>
                     </form>
                 </div>
