@@ -35,11 +35,9 @@ class CrudModel extends Model
         $first_name = $request->input('first_name');
         $last_name = $request->input('last_name');
         $email = $request->input('email');
-        $role_id = $request->input('role_id');
-        $creator_id = $request->input('creator_id');
         $password = Hash::make($request->input('password'));
 
-        $result = DB::update('UPDATE users SET first_name = ?, last_name = ?, email = ?, password = ?, role_id = ?, creator_id = ? WHERE id = ?', [$first_name, $last_name, $email, $password, $creator_id, $role_id, $user_id]);
+        $result = DB::update('UPDATE users SET first_name = ?, last_name = ?, email = ?, password = ? WHERE id = ?', [$first_name, $last_name, $email, $password, $user_id]);
 
         return $result;
     }

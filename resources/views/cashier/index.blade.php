@@ -318,18 +318,6 @@
                             <input style="background-color: #b6a4f5" type="email" class="form-control text-black" id="emailu" placeholder="Email" required>
                             <label style="color: rgb(0, 0, 0)" for="floatingInput">Email</label>
                         </div>
-                        <div class="mb-4">
-                            <select id="role_idu" name="role_id" class="form-select form-select-lg mb-3 rounded-lg" style="background-color: #b6a4f5" required>
-                                <option selected>Role:</option>
-                                @foreach ($roles as $role)
-                                    <option value="{{ $role->role_id }}">{{ $role->role_name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input style="background-color: #b6a4f5" type="text" class="form-control text-black" id="encodedu" placeholder="Encoded" required>
-                            <label style="color: rgb(0, 0, 0)" for="floatingInput">Encoded</label>
-                        </div>
                         <div class="form-floating mb-3">
                             <input style="background-color: #b6a4f5" type="text" class="form-control text-black" id="passwordu" placeholder="Password" required>
                             <label style="color: rgb(0, 0, 0)" for="floatingInput">Password</label>

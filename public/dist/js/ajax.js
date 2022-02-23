@@ -104,16 +104,12 @@ $('#get_user_data').on('dblclick', '.EditPost', function() {
     let first_name = $(this).data('first_name');
     let last_name = $(this).data('last_name');
     let email = $(this).data('email');
-    let role_id = $(this).data('role_id');
-    let encoder = $(this).data('encoder');
     let password = $(this).data('password');
 
     $('#user_idu').val(user_id);
     $('#firstnameu').val(first_name);
     $('#lastnameu').val(last_name);
     $('#emailu').val(email);
-    $('#role_idu').val(role_id);
-    $('#encodedu').val(encoder);
     $('#passwordu').val(password);
 
     if (confirm("Do you want to update this?")) {
@@ -130,14 +126,12 @@ $('#update_data').submit('click', function() {
     let first_name = $('#firstnameu').val()
     let last_name = $('#lastnameu').val()
     let email = $('#emailu').val()
-    let role_id = $('#role_idu').val()
-    let creator_id = $('#encodedu').val()
     let password = $('#passwordu').val()
 
     $.ajax({
         type: 'POST',
         dataType: 'json',
-        data: { user_id: user_id, first_name: first_name, last_name: last_name, email: email, role_id: role_id, creator_id: creator_id, password: password },
+        data: { user_id: user_id, first_name: first_name, last_name: last_name, email: email, password: password },
         url: 'update_data',
         success: function(data) {
 
